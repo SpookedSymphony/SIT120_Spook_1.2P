@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta name="'viewport" content="width=device-width, initial scale=1.0">
+        <title style="font-size:10vw">Responsive Web Design Example</title>
+    </head>    
+    <style>
+        *   {
+            box-sizing: border-box;
+        }
+        .first {
+            float: left;
+            width: 20%;
+            padding: 10px;
+        }
+        .second {
+            float: left;
+            width: 60%;
+            padding: 10px;
+        }
+        .third {
+            float: left;
+            width: 20%;
+            padding: 10px;
+        }
+        @media only screen and (max-width: 620px) {
+            .first, .second, .third {
+                width: 100%;
+            }
+        }
+    </style>
+    <head>
+        <body>
+            <h1 style="color:blueviolet;">Welcome to my responsive website!</h1>
+
+            <div class="first">
+                <ol>
+                    <li>first</li>
+                    <li>againfirst</li>
+                    <li>alsofirst</li>
+                </ol>
+            </div>
+            <div class="second">
+                <h2>This is the second</h2>
+                <p>Welcome to the first paragraph of my responsive website! Feel free to take a look around, although you may only find the Deakin logo O:</p>
+            </div>
+            <div class="third">
+                <h3>This is the final</h3>
+                <p>This is actually the third</p>
+            </div>
+
+            
+
+            <img align="middle" src="deakin_logo.png" style="max-width:100%;height:auto;">
+        </body>
+    </head>
+</html>

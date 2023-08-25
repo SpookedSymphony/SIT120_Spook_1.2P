@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript examples</title>
+    </head>
+    <body>
+
+        <h1>String Methods</h1>
+
+        <h2>Length method</h2>
+        <p>The length of my name is:</p>
+        <p id="name"></p>
+
+        <script>
+            let text = "AMELIA";
+            document.getElementById("name").innerHTML = text.length;
+        </script>
+
+        <h2>To uppercase method</h2>
+
+        <button onclick="toUpper()">Upper</button>
+        <p id="upper">convert me!</p>
+
+        <script>
+            function toUpper() {
+                let text = document.getElementById("upper").innerHTML;
+                document.getElementById("upper").innerHTML = text.toUpperCase();
+            }
+        </script>
+
+        <h2>To lowercase method</h2>
+
+        <button onclick="toLower()">Lower</button>
+        <p id="lower">CONVERT ME!</p>
+
+        <script>
+            function toLower() {
+                let text = document.getElementById("lower").innerHTML;
+                document.getElementById("lower").innerHTML = text.toLowerCase();
+            }
+        </script>
+
+        <h2>Replace method</h2>
+
+        <button onclick="replace()">Replace</button>
+        <p id="replace">Replace me!</p>
+
+        <script>
+            function replace() {
+                let text = document.getElementById("replace").innerHTML;
+                document.getElementById("replace").innerHTML = text.replace("me", "SHEEP");
+            }
+        </script>
+
+        <h2>Trim method</h2>
+
+        <button onclick="trim()">Trim</button>
+        <p id="trim">       Trim me!         </p>
+
+        <script>
+            function trim() {
+                let text = document.getElementById("trim").innerHTML;
+                document.getElementById("trim").innerHTML = text.trim();
+            }
+        </script>
+
+        <h1>Number Methods</h1>
+
+        <h2>Addition</h2>
+        
+        <p id="add"></p>
+
+        <script>
+            let a = 17;
+            let b = 3;
+            let c = a + b; 
+            document.getElementById("add").innerHTML = c;
+        </script>
+
+        <h2>Subtraction</h2>
+        
+        <p id="sub"></p>
+
+        <script>
+            let d = 17;
+            let e = 3;
+            let f = d - e; 
+            document.getElementById("sub").innerHTML = f;
+        </script>
+
+        <h2>Mulitplication</h2>
+
+        <p id="multi"></p>
+
+        <script>
+            let g = 17;
+            let h = 3;
+            let i = g * h; 
+            document.getElementById("multi").innerHTML = i;
+        </script>
+
+        <h2>Division</h2>
+
+        <p id="divide"></p>
+
+        <script>
+            let j = 17;
+            let k = 3;
+            let l = j / k; 
+            document.getElementById("divide").innerHTML = l;
+        </script>
+
+
+        <h2>True or false</h2>
+
+        <p id="TF"></p>
+
+        <script>
+            let T = 17;
+            let F = 3;
+            document.getElementById("TF").innerHTML = (T===F);
+        </script>
+
+        <H1>Array Methods</H1>
+
+        <h2>Array length method</h2>
+
+        <p id="length_array"></p>
+
+        <script>
+            const characters = ["Zoe", "Lillia", "Lulu", "Ashe"];
+            let size = characters.length;
+            document.getElementById("length_array").innerHTML = size;
+        </script>
+
+        <h2>To string method</h2>
+
+        <p id="string_array"></p>
+
+        <script>
+            document.getElementById("string_array").innerHTML = characters.toString();
+        </script>
+
+        <h2>Pop method</h2>
+
+        <p id="pop"></p>
+
+        <script>
+            document.getElementById("pop").innerHTML = characters.pop();
+        </script>
+
+        <h2>Push method</h2>
+        
+        <p id="push"></p>
+
+        <script>
+            document.getElementById("push").innerHTML = characters.push();
+        </script>
+
+        <h2>Shift Method</h2>
+
+        <p id="shift"></p>
+
+        <script>
+            document.getElementById("shift").innerHTML = characters.shift();
+        </script>
+
+        <h1>Date Methods</h1>
+        
+        <p id="date1"></p>
+
+        <script>
+            const dt1 = new Date();
+            document.getElementById("date1").innerHTML = dt1;
+        </script>
+
+        <p id="date2"></p>
+
+        <script>
+            const dt2 = new Date(2004, 04, 17, 13, 45, 9, 0);
+            document.getElementById("date2").innerHTML = dt2
+        </script>
+
+        <p id="date3"></p>
+
+        <script>
+            const dt3 = new Date(2004, 04, 17);
+            document.getElementById("date3").innerHTML = dt3
+        </script>
+
+        <p id="date4"></p>
+
+        <script>
+            const dt4 = new Date(73, 04, 17);
+            document.getElementById("date4").innerHTML = dt4
+        </script>
+
+        <p id="date5"></p>
+
+        <script>
+            const dt5 = new Date(42 * 37);
+            document.getElementById("date5").innerHTML = dt5
+        </script>
+
+        <h1>Javascript Functions</h1>
+
+        <h2>Convert to litres</h2>
+
+        <p id ="litres"></p>
+
+        <script>
+            function toLitre(x) {
+                return x / 1000;
+            }
+
+            let value = toLitre(5000);
+            document.getElementById("litres").innerHTML = value
+        
+        </script>
+
+        <h2>Convert to millilitres</h2>
+
+        <p id ="millilitres"></p>
+
+        <script>
+            function toMillilitre(y) {
+                return y * 1000;
+            }
+
+            let value2 = toMillilitre(5);
+            document.getElementById("millilitres").innerHTML = value2
+        
+        </script>
+
+
+
+
+    </body>
+</html>

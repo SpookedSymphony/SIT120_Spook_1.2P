@@ -68,6 +68,7 @@
 
         <h2>Addition</h2>
         
+        <h3>17 + 3 =</h3>
         <p id="add"></p>
 
         <script>
@@ -79,6 +80,8 @@
 
         <h2>Subtraction</h2>
         
+        <h3>17 - 3 =</h3>
+
         <p id="sub"></p>
 
         <script>
@@ -89,6 +92,8 @@
         </script>
 
         <h2>Mulitplication</h2>
+
+        <h3>17 x 3 =</h3>
 
         <p id="multi"></p>
 
@@ -101,6 +106,8 @@
 
         <h2>Division</h2>
 
+        <h3>17 / 3 =</h3>
+
         <p id="divide"></p>
 
         <script>
@@ -112,6 +119,8 @@
 
 
         <h2>True or false</h2>
+
+        <h3>17 == 3</h3>
 
         <p id="TF"></p>
 
@@ -157,7 +166,7 @@
             document.getElementById("push").innerHTML = characters.push();
         </script>
 
-        <h2>Shift Method</h2>
+        <h2>Shift Method - Variants</h2>
 
         <p id="shift"></p>
 
@@ -206,30 +215,38 @@
 
         <h2>Convert to litres</h2>
 
-        <p id ="litres"></p>
+        <p id ="litres">5000</p>
+
+        <button onclick="litreConversion()">To litres!</button>
 
         <script>
             function toLitre(x) {
                 return x / 1000;
             }
 
-            let value = toLitre(5000);
-            document.getElementById("litres").innerHTML = value
-        
+            function litreConversion() {
+                let value = toLitre(5000);
+                document.getElementById("litres").innerHTML = value
+            }
+
         </script>
 
         <h2>Convert to millilitres</h2>
 
-        <p id ="millilitres"></p>
+        <p id ="millilitres">5</p>
+
+        <button onclick="millilitreConversion()">To millilitres!</button>
 
         <script>
             function toMillilitre(y) {
                 return y * 1000;
             }
 
+            function millilitreConversion() {
             let value2 = toMillilitre(5);
             document.getElementById("millilitres").innerHTML = value2
-        
+            }
+
         </script>
 
 
